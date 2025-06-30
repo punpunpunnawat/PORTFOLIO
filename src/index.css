@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@font-face {
+	font-family: "Audrey";
+	src: url("/public/fonts/Audrey-Normal.otf") format("otf");
+}
+
+@theme {
+	/* --font-family-sans: "Poppins", ui-sans-serif, system-ui, sans-serif; */
+	--font-family-audrey: "Audrey", ui-sans-serif, sans-serif;
+	/* Colors - remove dashes and use proper format */
+	--color-primary: #232328;
+	--color-black-20: #f0f0f0;
+	--color-white-100: #ffffff;
+
+	/* Text colors - define as colors, not with rgba */
+	--color-text-detail: rgb(255 255 255 / 0.7);
+	--color-text-primary: rgb(255 255 255 / 1);
+
+	/* Background images */
+	--background-image-primary-linear-20: linear-gradient(
+		90deg,
+		#212126 0%,
+		#1d1d21 50%,
+		#212126 100%
+	);
+
+	--background-image-primary-linear-30: linear-gradient(
+		90deg,
+		#202024 0%,
+		#151518 50%,
+		#202024 100%
+	);
+
+	--background-gradient-white: linear-gradient(
+		to left,
+		rgba(255, 255, 255, 0.25) 0%,
+		/* white 25% opacity */ transparent 100%
+	);
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+.detail {
+  @apply font-light text-white/70;
+}
+
+@layer utilities {
+  .border-gradient-white {
+    position: relative;
+    border-radius: 1rem;
+  }
+
+  .border-gradient-white::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: inherit;
+    background: linear-gradient(to right, rgba(255,255,255,0.025), rgba(255,255,255,0.1), rgba(255,255,255,0.025));
+    mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    pointer-events: none;
+    z-index: 1;
+  }
+}
+
+.border-gradient-whitep-bottom {
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, rgba(255,255,255,0.025), rgba(255,255,255,0.1), rgba(255,255,255,0.025)) 1;
+  border-image-slice: 1;
+}
