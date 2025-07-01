@@ -50,7 +50,7 @@ body {
 @layer utilities {
   .border-gradient-white {
     position: relative;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
   }
 
   .border-gradient-white::before {
@@ -74,4 +74,22 @@ body {
   border-bottom: 1px solid;
   border-image: linear-gradient(to right, rgba(255,255,255,0.025), rgba(255,255,255,0.1), rgba(255,255,255,0.025)) 1;
   border-image-slice: 1;
+}
+
+button {
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+button:active {
+  background-color: rgba(255, 255, 255, 0.2);
 }
