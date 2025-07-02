@@ -1,5 +1,4 @@
 import FadeInSection from "./components/FadeInSection";
-import InternshipBox from "./components/InternshipBox";
 import NavBar from "./components/NavBar";
 import ProjectBox from "./components/ProjectBox";
 import SectionHeader from "./components/SectionHeader";
@@ -63,7 +62,10 @@ function App() {
 									</span>
 								</div>
 							</div>
-							<img src="" className="w-80 h-100" />
+							<img
+								src="/pictures/Pun.jpg"
+								className="w-80 h-100 border-gradient-white"
+							/>
 						</div>
 					</section>
 				</FadeInSection>
@@ -178,7 +180,7 @@ function App() {
 							<ProjectBox
 								title="CLASH AND CARD"
 								detail="A classic Rock-Paper-Scissors reimagined into a turn-based card game. Players choose a class, upgrade their abilities, build custom decks, and battle through a Campaign mode or face off in real-time PvP with others."
-								pictures={["/pictures/ClashAndCard.png"]}
+								pictures={["/pictures/CNC1.png", "/pictures/CNC2.png", "/pictures/CNC3.png"]}
 								keywords={[
 									"React",
 									"Golang",
@@ -191,7 +193,7 @@ function App() {
 								features={[
 									"Authentication system (JWT)",
 									"Campaign mode vs AI",
-									"Real-time PvP matchmaking",
+									"Real-time PvP",
 									"Class-based system with skill sets",
 									"Level & stat progression",
 									"In-game economy with gold and card shop",
@@ -201,9 +203,9 @@ function App() {
 								title="TODO"
 								detail="A smart and fully responsive task manager designed to boost your productivity. Easily track, organize, and recover tasks across all stages — current, completed, or deleted. Stay on top of your priorities with intuitive controls and seamless user experience. Start managing your day smarter, not harder."
 								pictures={[
-									"/pictures/TODO.png",
-									"/pictures/TODO.png",
-									"/pictures/TODO.png",
+									"/pictures/TODO1.png",
+									"/pictures/TODO2.png",
+									"/pictures/TODO3.png",
 								]}
 								keywords={[
 									"React",
@@ -221,27 +223,10 @@ function App() {
 								]}
 							/>
 							<ProjectBox
-								title="TTB My Home Feature"
-								detail="A smart and fully responsive task manager designed to boost your productivity. Easily track, organize, and recover tasks across all stages — current, completed, or deleted. Stay on top of your priorities with intuitive controls and seamless user experience. Start managing your day smarter, not harder."
-								pictures={[
-									"/pictures/TODO.png",
-									"/pictures/TODO.png",
-									"/pictures/TODO.png",
-								]}
-								keywords={[
-									"React",
-									"Golang",
-									"MySQL",
-									"Context",
-									"REST API",
-								]}
-								features={[
-									"Authentication system",
-									"Add tasks with details (priority, date, time, and task name)",
-									"Manage and track current, completed, and deleted tasks",
-									"Mark tasks as done and undo",
-									"Delete and recover tasks",
-								]}
+								title="TTB My Home Feature Mockup"
+								detail="Developed a front-end prototype for a UX/UI project under the guidance of a senior software engineer."
+								keywords={["React", "Context", "Communication"]}
+								isSecret
 							/>
 						</section>
 					</FadeInSection>
@@ -258,16 +243,62 @@ function App() {
 									"Design Thinking",
 									"User Testing",
 									"Front-end",
+									"Communication",
 								]}
 								isSecret
 							/>
 
 							<ProjectBox
-								title="CLASH AND CARD"
-								detail="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-								pictures={[""]}
-								keywords={["KEY1", "KEY2", "KEY3"]}
-								features={["FEATURE1", "FEATURE2", "FEATURE3"]}
+								title="What Thai Food"
+								detail="project of ai subject at KMITL. want to know waht is this thai food? just give us the picture and do the rest!."
+								pictures={["/pictures/WTF.png"]}
+								keywords={["UX", "UI", "MOBILE"]}
+								features={[
+									"Upload or Take a photo to find thai food name by catagorie",
+								]}
+							/>
+
+							<ProjectBox
+								title="Pocket Book"
+								detail="A project for the Software Design course at KMITL. Pocket Book is a mobile manga reader app that brings manga from around the world right to your pocket."
+								pictures={["/pictures/PocketBook.png"]}
+								keywords={["UX", "UI", "MOBILE"]}
+								features={[
+									"Authentication system",
+									"System UI base on user type (Buyer, Seller)",
+
+									"Authentication system",
+									"Authentication system",
+									"Authentication system",
+								]}
+							/>
+
+							<ProjectBox
+								title="Pubble"
+								detail="A project for the Computer Game Programming course at KMITL. Pubble is a bubble shooter game with roguelike elements, featuring special bubbles and stat upgrades."
+								pictures={[
+									"/pictures/PubbleBattle.png",
+									"/pictures/PubbleShop.png",
+								]}
+								keywords={["UX", "UI", "DESKTOP", "GAME"]}
+								features={[
+									"Bubble shooter game.",
+									"Rouge-like mechanic.",
+									"Upgrade stat. (from shop)",
+									"Special bubble. (from shop)",
+								]}
+							/>
+
+							<ProjectBox
+								title="Graphic Design"
+								detail="Graphic Design for KMITL Scienece website (https://www.science.kmitl.ac.th/new) and KMITL CS Bootcamp."
+								pictures={[
+									"/pictures/CSweb.png",
+									"/pictures/CS1_1.png",
+									"/pictures/CS1.png",
+									"/pictures/CS2.png",
+								]}
+								keywords={["Graphic"]}
 							/>
 						</section>
 					</FadeInSection>
@@ -278,20 +309,32 @@ function App() {
 							className="flex flex-col pt-8 pb-16 bg-primary-linear-20 gap-16 border-gradient-white"
 						>
 							<SectionHeader title="INTERNSHIP" />
-							<InternshipBox
+							<ProjectBox
 								title="UX/UI Designer"
 								subTitle="TTB Spark"
-								detail="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-								picture=""
-								keywords={[
-									"React",
-									"Golang",
-									"MySQL",
-									"WebSocket",
-									"REST API",
-									"JWT",
+								detail="This has been a great opportunity for me. I’ve learned a lot — from UX/UI design to frontend development — and how to work effectively in an agile team. I also improved soft skills like communication and presenting ideas. Thank you to TTB and all my mentors for the support and guidance. I’ll carry everything I’ve learned with me as I grow."
+								pictures={[
+									"/pictures/TTB1.png",
+									"/pictures/TTB2.png",
+									"/pictures/TTB3.png",
 								]}
-								features={["FEATURE1", "FEATURE2", "FEATURE3"]}
+								keywords={[
+									"UX",
+									"UI",
+									"Front-end",
+									"React",
+									"Agile",
+									"Presentation",
+									"Communication",
+									"Mortgage",
+								]}
+								features={[
+									"Created UX/UI design and updated progress regularly with UX/UI mentors",
+									"Developed front-end (React) with support and guidance from senior devs",
+									"Presented final outcome to interns and mentors",
+									"Collaborated with cross-functional team throughout the process",
+									"Learned from real-world organization and agile workflow",
+								]}
 							/>
 						</section>
 					</FadeInSection>
