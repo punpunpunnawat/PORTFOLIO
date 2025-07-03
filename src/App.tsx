@@ -30,68 +30,58 @@ function App() {
 		<>
 			<NavBar />
 
-			<div className="flex flex-col min-h-screen bg-primary text-white-100 pt-32">
+			<div className="flex flex-col min-h-screen pt-32 bg-primary text-white-100">
 				<FadeInSection>
 					<section
 						id="about"
-						className="flex flex-col py-8 bg-primary-linear-30 h-[calc(100vh-192px)]"
+						className="flex flex-col h-[calc(100vh-192px)] py-8 bg-primary-linear-30"
 					>
 						<SectionHeader title="ABOUT" />
-						<div className="flex flex-col h-full px-8 sm:px-16 md:px-24 xl:px-32 py-4 items-center gap-4">
-							<div className="flex flex-3/5 lg:flex-2/3 flex-row gap-8 sm:gap-16">
-								<div className="flex flex-col items-center justify-evenly">
-									<h1 className="font-family-audrey text-2xl sm:text-5xl text-center">
+						<div className="flex flex-col h-full px-8 py-4 gap-4 items-center sm:px-16 md:px-24 xl:px-32">
+							<div className="flex flex-row flex-3/5 gap-8 sm:gap-16 lg:flex-2/3">
+								<div className="flex flex-col justify-evenly items-center">
+									<h1 className="text-2xl font-family-audrey text-center sm:text-5xl">
 										PUNNAWAT JAROONKIRATIROJE
 									</h1>
 									<div className="flex flex-col gap-2 items-center">
 										<span>PASSION</span>
 										<span className="detail text-xs sm:text-base">
-											&nbsp;&nbsp;&nbsp;&nbsp;Hello you
-											can call me "Pun" I am passionate
-											about becoming a developer, so I
-											enrolled in Computer Science at
-											KMITL. Through my studies, personal
-											projects and internship, I gained
-											solid knowledge and understanding of
-											front-end, and back-end development,
-											UX/UI, aiming to be a full-stack
-											developer.
+											&nbsp;&nbsp;&nbsp;&nbsp;Hello you can call me "Pun" I am passionate about becoming a developer, so I enrolled in Computer Science at KMITL. Through my studies, personal projects and internship, I gained solid knowledge and understanding of front-end, and back-end development, UX/UI, aiming to be a full-stack developer.
 										</span>
 									</div>
 								</div>
 								<img
 									src="/pictures/Pun.png"
-									className="w-80 object-contain hidden lg:flex"
+									className="hidden lg:flex w-80 object-contain"
 								/>
 							</div>
 
-							<div className="flex flex-2/5 lg:flex-1/3 flex-col justify-evenly">
-								<div className="flex flex-col sm:flex-row gap-2 lg:gap-8 items-center justify-center">
+							<div className="flex flex-col flex-2/5 justify-evenly lg:flex-1/3">
+								<div className="flex flex-col gap-2 items-center justify-center sm:flex-row lg:gap-8">
 									<h4 className="w-32">INTEREST ROLES</h4>
-									<div className="flex flex-wrap gap-2 detail justify-center">
-										<div className="px-4 ring ring-white/10 rounded-sm whitespace-nowrap text-xs sm:text-base">
+									<div className="flex flex-wrap gap-2 justify-center detail">
+										<div className="px-4 text-xs ring ring-white/10 rounded-sm whitespace-nowrap sm:text-base">
 											FullStack
 										</div>
-										<div className="px-4 ring ring-white/10 rounded-sm whitespace-nowrap text-xs sm:text-base">
+										<div className="px-4 text-xs ring ring-white/10 rounded-sm whitespace-nowrap sm:text-base">
 											Front-end
 										</div>
-										<div className="px-4 ring ring-white/10 rounded-sm whitespace-nowrap opacity-50 text-xs sm:text-base">
+										<div className="px-4 text-xs opacity-50 ring ring-white/10 rounded-sm whitespace-nowrap sm:text-base">
 											Back-end (Currently learning)
 										</div>
 									</div>
 								</div>
 
-								<div className="flex flex-row gap-4 sm:gap-8 items-center">
+								<div className="flex flex-row items-center gap-4 sm:gap-8">
 									<span className="w-24 sm:w-32">EDUCATION</span>
-									<span className="detail flex-1 text-xs text-center sm:text-base sm:text-start">
-										KMITL Computer Science GPA 3.29
-										(2021-2024)
+									<span className="flex-1 text-xs text-center detail sm:text-base sm:text-start">
+										KMITL Computer Science GPA 3.29 (2021-2024)
 									</span>
 								</div>
-								<div className="flex flex-row gap-4 sm:gap-8 items-center">
+								<div className="flex flex-row items-center gap-4 sm:gap-8">
 									<span className="w-24 sm:w-32">LOCATION</span>
-									<span className="detail flex-1 text-xs text-center sm:text-base sm:text-start">
-										Thailand, Bankok
+									<span className="flex-1 text-xs text-center detail sm:text-base sm:text-start">
+										Thailand, Bangkok
 									</span>
 								</div>
 							</div>
@@ -99,14 +89,14 @@ function App() {
 					</section>
 				</FadeInSection>
 
-				<section className="flex flex-col px-4 sm:px-8 md:px-16 lg:px-32 xl:px-40 2xl:px-48 py-16 gap-16">
+				<section className="flex flex-col gap-16 px-4 py-16 sm:px-8 md:px-16 lg:px-32 xl:px-40 2xl:px-48">
 					<FadeInSection>
 						<section
 							id="skill"
-							className="flex flex-col pt-8 pb-16 bg-primary-linear-20 gap-16 border-gradient-white"
+							className="flex flex-col pt-8 pb-16 gap-16 border-gradient-white bg-primary-linear-20"
 						>
 							<SectionHeader title="SKILL" />
-							<div className="flex flex-col md:flex-row gap-8 md:gap-0 md:justify-evenly">
+							<div className="flex flex-col gap-8 md:flex-row md:gap-0 md:justify-evenly">
 								<div className="flex flex-col gap-4 items-center">
 									<h4>FRONT-END</h4>
 									<SkillBox
@@ -139,7 +129,7 @@ function App() {
 									/>
 								</div>
 
-								<div className="flex flex-col gap-8 justify-between items-center">
+								<div className="flex flex-col gap-8 items-center justify-between">
 									<div className="flex flex-col gap-4 items-center">
 										<h4>BACK-END</h4>
 										<SkillBox
@@ -203,7 +193,7 @@ function App() {
 					<FadeInSection>
 						<section
 							id="project"
-							className="flex flex-col pt-8 pb-16 bg-primary-linear-20 gap-8 border-gradient-white"
+							className="flex flex-col pt-8 pb-16 gap-8 border-gradient-white bg-primary-linear-20"
 						>
 							<SectionHeader title="DEVELOPMENT PROJECT" />
 							<ProjectBox
@@ -265,7 +255,7 @@ function App() {
 					</FadeInSection>
 
 					<FadeInSection>
-						<section className="flex flex-col pt-8 pb-16 bg-primary-linear-20 gap-8 border-gradient-white">
+						<section className="flex flex-col pt-8 pb-16 gap-8 border-gradient-white bg-primary-linear-20">
 							<SectionHeader title="DESIGN PROJECT" />
 							<ProjectBox
 								title="TTB My Home Feature"
@@ -339,7 +329,7 @@ function App() {
 					<FadeInSection>
 						<section
 							id="internship"
-							className="flex flex-col pt-8 pb-16 bg-primary-linear-20 gap-8 border-gradient-white"
+							className="flex flex-col pt-8 pb-16 gap-8 border-gradient-white bg-primary-linear-20"
 						>
 							<SectionHeader title="INTERNSHIP" />
 							<ProjectBox
@@ -375,67 +365,47 @@ function App() {
 
 				<section
 					id="contact"
-					className="flex flex-col p-8 gap-8 items-center bg-primary-linear-30"
+					className="flex flex-col items-center gap-8 p-8 bg-primary-linear-30"
 				>
 					<SectionHeader title="CONTACT" />
-					<div className="flex flex-col p-8 gap-8 sm:gap-2">
-						<div className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-center">
+					<div className="flex flex-col gap-8 p-8 sm:gap-2">
+						<div className="flex flex-col items-center gap-2 sm:flex-row sm:gap-4">
 							<div className="flex flex-row gap-2">
 								<img src="/icons/email.svg" />
 								<label className="sm:w-24">EMAIL</label>
 							</div>
-							<button
-								onClick={handleClickEmail}
-								className="flex flex-row w-80"
-							>
-								<span className="detail flex-1">
-									punpunpunnawat@outlook.com
-								</span>
+							<button onClick={handleClickEmail} className="flex w-80 flex-row">
+								<span className="detail flex-1">punpunpunnawat@outlook.com</span>
 								<img src="/icons/link.svg" />
 							</button>
 						</div>
-						<div className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-center">
+						<div className="flex flex-col items-center gap-2 sm:flex-row sm:gap-4">
 							<div className="flex flex-row gap-2">
 								<img src="/icons/phone.svg" />
 								<label className="sm:w-24">PHONE</label>
 							</div>
-							<button
-								onClick={handleClickPhone}
-								className="flex flex-row w-80"
-							>
-								<span className="detail flex-1">
-									0923539229
-								</span>
+							<button onClick={handleClickPhone} className="flex w-80 flex-row">
+								<span className="detail flex-1">0923539229</span>
 								<img src="/icons/link.svg" />
 							</button>
 						</div>
-						<div className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-center">
+						<div className="flex flex-col items-center gap-2 sm:flex-row sm:gap-4">
 							<div className="flex flex-row gap-2">
 								<img src="/icons/linkedin.svg" />
 								<label className="sm:w-24">LINKEDIN</label>
 							</div>
-							<button
-								onClick={handleClickLinkedIn}
-								className="flex flex-row w-80"
-							>
-								<span className="detail flex-1">
-									Punnawat Jaroonkiratiroje
-								</span>
+							<button onClick={handleClickLinkedIn} className="flex w-80 flex-row">
+								<span className="detail flex-1">Punnawat Jaroonkiratiroje</span>
 								<img src="/icons/link.svg" />
 							</button>
 						</div>
-						<div className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-center">
+						<div className="flex flex-col items-center gap-2 sm:flex-row sm:gap-4">
 							<div className="flex flex-row gap-2">
 								<img src="/icons/github.svg" />
 								<label className="sm:w-24">GITHUB</label>
 							</div>
-							<button
-								onClick={handleClickGithub}
-								className="flex flex-row w-80"
-							>
-								<span className="detail flex-1">
-									punpunpunnawat
-								</span>
+							<button onClick={handleClickGithub} className="flex w-80 flex-row">
+								<span className="detail flex-1">punpunpunnawat</span>
 								<img src="/icons/link.svg" />
 							</button>
 						</div>
