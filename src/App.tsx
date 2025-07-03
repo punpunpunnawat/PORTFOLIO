@@ -37,8 +37,8 @@ function App() {
 						className="flex flex-col h-[calc(100vh-192px)] py-8 bg-primary-linear-30"
 					>
 						<SectionHeader title="ABOUT" />
-						<div className="flex flex-col h-full px-8 py-4 gap-4 items-center sm:px-16 md:px-24 xl:px-32">
-							<div className="flex flex-row flex-3/5 gap-8 sm:gap-16 lg:flex-2/3">
+						<div className="flex flex-col h-full px-8 py-4 gap-0 items-center sm:px-16 md:px-24 xl:px-32 lg:gap-4">
+							<div className="flex flex-row flex-5/8 gap-8 sm:gap-16 lg:flex-1/3">
 								<div className="flex flex-col justify-evenly items-center">
 									<h1 className="text-2xl font-family-audrey text-center sm:text-5xl">
 										PUNNAWAT JAROONKIRATIROJE
@@ -56,8 +56,8 @@ function App() {
 								/>
 							</div>
 
-							<div className="flex flex-col flex-2/5 justify-evenly lg:flex-1/3">
-								<div className="flex flex-col gap-2 items-center justify-center sm:flex-row lg:gap-8">
+							<div className="flex flex-col flex-3/8 justify-evenly lg:flex-1/3">
+								<div className="flex flex-col gap-2 items-center justify-center sm:flex-row lg:gap-8 mb-8 sm:mb-0">
 									<h4 className="w-32">INTEREST ROLES</h4>
 									<div className="flex flex-wrap gap-2 justify-center detail">
 										<div className="px-4 text-xs ring ring-white/10 rounded-sm whitespace-nowrap sm:text-base">
