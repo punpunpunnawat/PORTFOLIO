@@ -10,6 +10,7 @@ type ProjectBoxProps = {
 	features?: string[];
 	isSecret?: boolean;
 	isInternship?: boolean;
+	onClickDemo?: () => void;
 };
 
 const ProjectBox = ({
@@ -21,17 +22,29 @@ const ProjectBox = ({
 	features,
 	isSecret = false,
 	isInternship = false,
+	onClickDemo,
 }: ProjectBoxProps) => {
 	const [currentIndex, setCurrentIndex] = useState(0);
+
+	const handleClickDemo = () => {
+		onClickDemo?.();
+	};
 
 	return (
 		<div className="flex flex-col w-full py-16 gap-16 bg-primary-linear-30">
 			<div className="flex flex-col px-8 sm:px-16 md:px-24 lg:px-32 xl:px-40 2xl:px-48 gap-16 items-center">
 				<div className="flex flex-col gap-8 w-full">
 					<div className="flex flex-col">
-						<h3 className="text-4xl font-family-audrey text-center">
-							{title}
-						</h3>
+						<div className="flex gap-4 flex-col justify-center sm:flex-row ">
+							<h3 className="text-4xl font-family-audrey text-center">
+								{title}
+							</h3>
+							{onClickDemo && (
+								<button onClick={handleClickDemo}>
+									TRY IT
+								</button>
+							)}
+						</div>
 						{subTitle && (
 							<span className="detail text-center">
 								{subTitle}

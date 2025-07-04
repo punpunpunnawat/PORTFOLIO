@@ -27,6 +27,14 @@ function App() {
 		window.open("https://github.com/punpunpunnawat", "_blank");
 	};
 
+	const handleClickClashAndCard = () => {
+		window.open("https://clash-and-card.punpunpunnawat.online", "_blank");
+	};
+
+	const handleClickTODO = () => {
+		window.open("https://todo.punpunpunnawat.online/login", "_blank");
+	};
+
 	return (
 		<>
 			<NavBar />
@@ -222,6 +230,7 @@ function App() {
 									"Level & stat progression",
 									"In-game economy with gold and card shop",
 								]}
+								onClickDemo={handleClickClashAndCard}
 							/>
 							<ProjectBox
 								title="TODO"
@@ -246,6 +255,7 @@ function App() {
 									"Mark tasks as done and undo",
 									"Delete and recover tasks",
 								]}
+								onClickDemo={handleClickTODO}
 							/>
 							<ProjectBox
 								title="TTB My Home Feature Mockup"
