@@ -5,6 +5,7 @@ import SectionHeader from "./components/SectionHeader";
 import SkillBox from "./components/SkillBox";
 
 function App() {
+	
 	const handleClickEmail = () => {
 		window.location.href = "mailto:punpunpunnawat@outlook.com";
 	};
@@ -236,6 +237,7 @@ function App() {
 									"MySQL",
 									"Context",
 									"REST API",
+									"Tailwind",
 								]}
 								features={[
 									"Authentication system",
