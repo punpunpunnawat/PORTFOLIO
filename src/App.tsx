@@ -183,12 +183,20 @@ function App() {
 										title="Git"
 									/>
 									<SkillBox
-										iconClass="devicon-github-original colored"
+										iconClass="devicon-github-original"
 										title="GitHub"
 									/>
 									<SkillBox
 										iconClass="devicon-docker-plain colored"
 										title="Docker"
+									/>
+									<SkillBox
+										iconClass="devicon-cloudflare-plain colored"
+										title="Cloudflare"
+									/>
+									<SkillBox
+										iconClass="devicon-googlecloud-plain colored"
+										title="Google Cloud"
 									/>
 									<SkillBox
 										iconClass="devicon-figma-plain"
