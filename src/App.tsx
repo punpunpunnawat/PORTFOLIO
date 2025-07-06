@@ -255,9 +255,10 @@ function App() {
 									"Context",
 									"REST API",
 									"Tailwind",
+									"JWT",
 								]}
 								features={[
-									"Authentication system",
+									"Authentication system (JWT)",
 									"Add tasks with details (priority, date, time, and task name)",
 									"Manage and track current, completed, and deleted tasks",
 									"Mark tasks as done and undo",
@@ -378,6 +379,7 @@ function App() {
 									"Collaborated with cross-functional team throughout the process",
 									"Learned from real-world organization and agile workflow",
 								]}
+								isInternship
 							/>
 						</section>
 					</FadeInSection>
