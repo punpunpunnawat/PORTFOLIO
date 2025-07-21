@@ -75,8 +75,8 @@ function App() {
 										<div className="px-4 text-xs ring ring-white/10 rounded-sm whitespace-nowrap sm:text-base">
 											Front-end
 										</div>
-										<div className="px-4 text-xs opacity-50 ring ring-white/10 rounded-sm whitespace-nowrap sm:text-base">
-											Back-end (Currently learning)
+										<div className="px-4 text-xs ring ring-white/10 rounded-sm whitespace-nowrap sm:text-base">
+											Back-end
 										</div>
 									</div>
 								</div>
