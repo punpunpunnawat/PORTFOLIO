@@ -68,7 +68,7 @@ function App() {
 							<div className="flex flex-col flex-3/8 justify-evenly lg:flex-1/3">
 								<div className="flex flex-col gap-2 items-center justify-center sm:flex-row lg:gap-8 mb-8 sm:mb-0">
 									<h4 className="w-32">INTEREST ROLES</h4>
-									<div className="flex flex-wrap gap-2 justify-center detail">
+									<div className="flex flex-wrap flex-1 gap-2 justify-center detail">
 										<div className="px-4 text-xs ring ring-white/10 rounded-sm whitespace-nowrap sm:text-base">
 											FullStack
 										</div>
